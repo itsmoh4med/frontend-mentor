@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Age Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sub-container">
+            <div class="group">
+                <div class="sub-group">
+                    <label id="labelDay" class="label">DAY</label>
+                    <input id="birthDay" class="input" type="text" placeholder="DD">
+                    <label id="errorMsgDay" class="label errorMessage"></label>
+
+                </div>
+                <div class="sub-group">
+                    <label id="labelMonth" class="label">MONTH</label>
+                    <input id="birthMonth" class="input" type="text" placeholder="MM">
+                    <label id="errorMsgMonth" class="label errorMessage"></label>
+                </div>
+                <div class="sub-group">
+                    <label id="labelYear" class="label">YEAR</label>
+                    <input id="birthYear" class="input" type="text" placeholder="YYYY">
+                    <label id="errorMsgYear" class="label errorMessage"></label>
+                </div>
+            </div>
+            <div class="group">
+                <div><hr></div>
+                <div><img id="submit" src="images/icon-arrow.svg" alt="404"></div>
+            </div>
+            <div class="results">
+                <p class="resultText"><label id="resultYears">--</label> years</p>
+                <p class="resultText"><label id="resultMonths">--</label> months</p>
+                <p class="resultText"><label id="resultDays">--</label> days</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
